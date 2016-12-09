@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.sunshine.app.MainActivity"
+    tools:deviceIds="wear_square"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/blue"
+    android:id="@+id/parentView">
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/forecast_text_big_size"
+        android:text="15:50"/>
+
+    <TextView
+        android:id="@+id/dateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/forecast_text_size"
+        android:text="Fri, Jul 15"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/list_item_icon"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/list_icon"
+            android:layout_height="@dimen/list_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_cloudy"/>
+
+
+        <TextView
+            android:id="@+id/list_item_high_textview"
+            android:layout_width="@dimen/forecast_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/forecast_temperature_space"
+            android:layout_marginEnd="@dimen/forecast_temperature_space"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/forecast_text_size"
+            android:text="24"/>
+
+        <TextView
+            android:id="@+id/list_item_low_textview"
+            android:layout_width="@dimen/forecast_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/forecast_low_text"
+            android:textSize="@dimen/forecast_text_size"
+            android:text="15"/>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
