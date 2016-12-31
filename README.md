@@ -25,7 +25,7 @@ This sample uses the Gradle build system.  To build this project, use the
 Support
 -------
 
-- Google+ Community: https://discussions.udacity.com/c/nd801-p3-advanced-android-app-development
+- Google+ Community: https://plus.google.com/communities/105153134372062985968
 - Stack Overflow: http://stackoverflow.com/questions/tagged/android
 
 Patches are encouraged, and may be submitted by forking this project and
